@@ -13,8 +13,8 @@ Fliegt mit Regenschirm herum und verteilt Äpfel an verhungernde Kinder
 Erkennen welche Kinder am verhungern sind, entscheiden welchem kind man apfel gibt (zwei kinder nebeneinander)
 
 ## Game vorbei wenn:
-Wenn du falschen apfel sammelst
-Wenn du dich für falsches kind entscheidest
+Wenn du falschen apfel sammelst oder du dich für falsches kind entscheidest.
+Wenn du der alten Dame aufhilfst
 
 ## Game geschafft wenn:
 Genug kinder gerettet (5)
@@ -23,6 +23,8 @@ Genug kinder gerettet (5)
 5 äpfel sammeln
 (3 mal äpfel untersuchen)
 Kann Äpfel selbst essen für Energie
+Kann alte Dame bekämpfen
+
 
 
 # Link zu dem Statediagramm/Prototype
