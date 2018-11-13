@@ -25,3 +25,5 @@ Genug kinder gerettet (5)
 Kann Äpfel selbst essen für Energie
 
 
+# Link zu dem Statediagramm/Prototype
+http://twinery.org/2/#!/stories/7a90eb29-d313-4071-80a9-aeadbd9f60b0
