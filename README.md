@@ -20,11 +20,7 @@ Wenn du der alten Dame aufhilfst
 Genug kinder gerettet (5)
 
 ## Other goals/features:
-5 äpfel sammeln
-(3 mal äpfel untersuchen)
-Kann Äpfel selbst essen für Energie
-Kann alte Dame bekämpfen
-
+5 äpfel sammeln / Kann Äpfel selbst essen für Energie / Kann alte Dame bekämpfen
 
 
 # Link zu dem Statediagramm/Prototype
