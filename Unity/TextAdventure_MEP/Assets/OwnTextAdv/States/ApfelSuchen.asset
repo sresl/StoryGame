@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
+  m_Name: ApfelSuchen
+  m_EditorClassIdentifier: 
+  storyText: "Deine erste Aufgabe besteht nun darin \xC4pfel f\xFCr die Kinder zu
+    sammeln.\r\nDu kannst dich nun entscheiden ob du deine \xC4pfel selbst aussuchen
+    m\xF6chstes, oder es dem Zufall \xFCberl\xE4sst.\t\t"
+  storyNextchoices: " [1] \xC4pfel ausw\xE4hlen\n[2] Dem Zufall \xFCberlassen"
+  nextStates:
+  - {fileID: 11400000, guid: 56a5f09ad97df7b4babe8f66522b09e9, type: 2}
+  - {fileID: 11400000, guid: cf295458a75c3b448887c3843b3881e5, type: 2}
+  randomStates: []

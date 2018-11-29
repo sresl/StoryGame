@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
+  m_Name: Dead.Accident
+  m_EditorClassIdentifier: 
+  storyText: "Sorry to say, but your godhuman died at the accident. \n"
+  storyNextchoices: ' [1] Replay
+
+    [2] End'
+  nextStates:
+  - {fileID: 11400000, guid: f0e035a12f5f02b47a76b04cf2012011, type: 2}
+  - {fileID: 11400000, guid: 1084e64f20c7fd641a3f80d4f7bacf49, type: 2}
+  randomStates: []

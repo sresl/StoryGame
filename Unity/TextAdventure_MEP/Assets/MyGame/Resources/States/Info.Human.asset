@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
+  m_Name: Info.Human
+  m_EditorClassIdentifier: 
+  storyText: "Magda is a 21 year old woman. She loves salty food and is doing a lot
+    of sports. \n\nGood news, Magda is alive and at this moment she isn't dehydrated.
+    \n\nFor knitting wool you visit her in her house.  Be Collect and knit enough
+    that she will survive until rescue is approaching. "
+  storyNextchoices: ' [1] Find and collect some wool
+
+    [2] Request information about the accident.
+
+    [3] Wait, linger in shock'
+  nextStates:
+  - {fileID: 11400000, guid: 49087224d508cd246a8968cfb79835db, type: 2}
+  - {fileID: 11400000, guid: dd3dd5109c9ffda4981974225953ea5a, type: 2}
+  - {fileID: 11400000}
+  randomStates: []
