@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
-  m_Name: KinderHelfen
+  m_Name: GuterApfel
   m_EditorClassIdentifier: 
-  storyText: Kinder Helfen
+  storyText: 
   storyNextchoices: 
   nextStates: []
   randomStates: []

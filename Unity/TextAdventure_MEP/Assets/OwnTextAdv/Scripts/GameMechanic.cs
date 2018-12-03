@@ -8,6 +8,10 @@ public class GameMechanic : MonoBehaviour
 {
     //private static readonly System.Random getrandom = new System.Random(123);
 
+
+    //For testing and debug:
+    bool[] alltrue = new bool[5] { true, true, true, true, true };
+    
     //States
     public State startingState;
 
@@ -18,6 +22,8 @@ public class GameMechanic : MonoBehaviour
 
 
     //Loading scene
+    public GameObject loadSceneObject;
+
     private SceneLoader sceneLoader;
 
     //UI elements
@@ -31,16 +37,13 @@ public class GameMechanic : MonoBehaviour
     public Image appleStateBG;
     public Text appleStateTxt;
     public Text hungerStateTxt;
-    public GameObject loadSceneObject;
-
+    
     private string overrideText;
 
     //Story relevant
-    private bool RandomApfelGut = false;
+    private bool fillBasketAtOnce = false;
     private double hunger;
     private BoolGenerator boolGen = new BoolGenerator();
-
-
 
     private void SetupIntroUI()
     {
@@ -69,7 +72,7 @@ public class GameMechanic : MonoBehaviour
     {
         sceneLoader = loadSceneObject.GetComponent<SceneLoader>();
         actualState = startingState;
-        textIntroComponent.text = actualState.GetStateStory();
+        textIntroComponent.text   = actualState.GetStateStory();
         textComponentChoices.text = actualState.GetStateStoryMenue();
 
         ResetValues();
@@ -79,20 +82,36 @@ public class GameMechanic : MonoBehaviour
         Debug.Log("Enter");
 
         SetupIntroUI();
+    }
 
-
-        bool RandomApfelGut = boolGen.NextBoolean();
-        if (RandomApfelGut == true)
+    private bool containsBadApple(bool[] appleBasket)
+    {
+        foreach (bool goodApple in appleBasket)
         {
-            Debug.Log("RandomApfelGut is true");
+            if (!goodApple)
+            {
+                //Sobald der erste schlechte Apfel gefunden wird gehe aus der Methode raus
+                //und return true, d.h. es wurde mind. ein schlechter Apfel gefunden. 
+                return true;
+            }
         }
 
-        if (RandomApfelGut == false)
+        //alle Äpfel sind gut, darum wird false returned
+        return false; 
+    }
+
+    private bool[] getFiveApples()
+    {
+        //Gibt ein bool array mit 5 Werten zurück.
+        //True der Apfel ist gut
+        //False der Apfel ist schlecht
+        bool[] appleBasket = new bool[5];
+
+        for (int i = 0; i < 5; i++)
         {
-            Debug.Log("RandomApfelGut is false");
+            appleBasket[i] = boolGen.NextBoolean();
         }
-
-
+        return appleBasket;
     }
 
 
@@ -117,15 +136,15 @@ public class GameMechanic : MonoBehaviour
 
 
 
-        if (currentState.name == "RandomApfel" && RandomApfelGut)
+        if (currentState.name == "ApfelSuchen" && nextState.name == "RandomKinderHelfen")
         {
-            //anzeigen dass nur gute und zu kinder Helgen gehen
+            Debug.Log("War in ApfelSuchen und habe nur gute Äpfel");
 
         }
 
-        if (currentState.name == "RandomApfel" && !RandomApfelGut)
+        if (currentState.name == "ApfelSuchen" && nextState.name == "RandomApfelSchlecht")
         {
-
+            Debug.Log("War in ApfelSuchen und habe schlechte Äpfel");
 
         }
 
@@ -137,19 +156,19 @@ public class GameMechanic : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             State[] nextStates = actualState.GetNextStates();
-            Debug.Log("States size 1");
+            Debug.Log("Key Press 1 - States size: " + nextStates.Length);
             if (nextStates.Length < 1)
             {
                 return;
             }
-            Debug.Log("Pressed 1");
+           
             State nextState = nextStates[0];
             actualState = doTransition(actualState, nextState);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             State[] nextStates = actualState.GetNextStates();
-            Debug.Log("States size 2");
+            Debug.Log("Key Press 2 - States size: " + nextStates.Length);
             if (nextStates.Length < 2)
             {
                 return;
@@ -160,7 +179,7 @@ public class GameMechanic : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             State[] nextStates = actualState.GetNextStates();
-            Debug.Log("States size 3");
+            Debug.Log("Key Press 3 - States size: " + nextStates.Length);
             if (nextStates.Length < 3)
             {
                 return;
@@ -170,12 +189,12 @@ public class GameMechanic : MonoBehaviour
         }
         else
         {
-            Debug.Log("bin am leben");
+            //Debug.Log("bin am leben");
         }
 
         if (wait || overrideTextComponent)
         {
-            Debug.Log("in wait " + infoOn);
+            //Debug.Log("in wait " + infoOn);
             if (infoOn)
             {
                 textStoryComponent.text = overrideText;
@@ -188,7 +207,7 @@ public class GameMechanic : MonoBehaviour
         }
         else
         {
-            Debug.Log("in wait else" + infoOn);
+            //Debug.Log("in wait else" + infoOn);
             if (infoOn)
             {
                 textStoryComponent.text = actualState.GetStateStory();

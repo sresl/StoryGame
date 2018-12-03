@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class BoolGenerator : MonoBehaviour {
+public class BoolGenerator{
 
     System.Random rnd;
 

@@ -11,10 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
   m_Name: RandomApfel
   m_EditorClassIdentifier: 
-  storyText: 'Test
+  storyText: 'Random Apfel State Test
 
 '
   storyNextchoices: '[1] Replay'
   nextStates:
   - {fileID: 11400000, guid: ee8762e751eb13a4fa8578129ae1f18f, type: 2}
-  randomStates: []
+  randomStates:
+  - {fileID: 11400000, guid: 911ac460f95976141b0e5bf0e6138a9d, type: 2}
+  - {fileID: 11400000, guid: cdb1fc1a749f37d4d8e0133f1f7c255c, type: 2}
