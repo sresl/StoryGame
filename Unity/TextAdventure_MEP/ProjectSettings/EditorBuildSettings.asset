@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MyGame/Scenes/StartMenu.unity
+    path: Assets/OwnTextAdv/Scenes/StartMenu.unity
     guid: 32d682226351cbb4fb1a9d902697efb5
   - enabled: 1
-    path: Assets/MyGame/Scenes/Text101.unity
+    path: Assets/OwnTextAdv/Scenes/Text101.unity
     guid: 2b9911b48a3d9934c93200e0944c9d8b
+  - enabled: 1
+    path: Assets/OwnTextAdv/Scenes/LeaveScreen.unity
+    guid: 1ac320d265fd9f849a85f51cee156ac1
   m_configObjects: {}
