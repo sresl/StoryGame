@@ -11,9 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
   m_Name: Schild
   m_EditorClassIdentifier: 
-  storyText: "Du hast deinen Regenschirm aufgespannt um die Attacke abzuw\xE4hren..
-    dies war erfolgreich! M\xF6chtest du nun versuchen zu attackieren oder lieber
-    fliehen?"
+  storyText: "Du hast deinen Regenschirm aufgespannt um die Attacke abzuwehren.. dies
+    war erfolgreich! M\xF6chtest du nun versuchen zu attackieren oder lieber fliehen?"
   storyNextchoices: '[1] Die Dame attackieren
 
     [2] Fliehen und dem Kampf ausweichen'

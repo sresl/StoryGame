@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
   m_Name: RandomApfelSchlecht
   m_EditorClassIdentifier: 
-  storyText: Du hast leider einen schlechten Apfel erwischt.. deine Mission ist hier
+  storyText: Du hast leider einen schlechten Apfel erwischt.. Deine Mission ist hier
     zu Ende, starte sie jetzt neu und versuche es nochmal.
   storyNextchoices: '[1] Erneut versuchen'
   nextStates:

@@ -11,9 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
   m_Name: Ziel
   m_EditorClassIdentifier: 
-  storyText: "Hurra, du hast alle Kinder vor dem verhungern gerettet!!!\nDurch deine
-    Guten Ort gemacht.\n\nFalls du m\xF6chtest, kannst du hier deine Mission noch
-    einmal starten um andere Wege einzuschlagen, viel Gl\xFCck!"
+  storyText: "Hurra, du hast alle Kinder vor dem Verhungern gerettet!!!\nDu hast die
+    Welt durch deine guten Taten zu einem besseren Ort gemacht.\n\nFalls du m\xF6chtest,
+    kannst du hier deine Mission noch einmal starten um andere Wege einzuschlagen,
+    viel Gl\xFCck!"
   storyNextchoices: '[1] Mission noch einmal starten'
   nextStates:
   - {fileID: 11400000, guid: ee8762e751eb13a4fa8578129ae1f18f, type: 2}

@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
   m_Name: Attacke
   m_EditorClassIdentifier: 
-  storyText: "Du wirbelst deinen Regenschirm und landest einen Volltreffer, die Frau
+  storyText: "Du wirbelst deinen Regenschirm und landest einen Volltreffer. Die Frau
     liegt hilflos am Boden.\r\nM\xF6chtest du sie ihrem Schicksal \xFCberlassen oder
-    ihr helfen obwohl sie dich attackiert hat?"
+    ihr helfen, obwohl sie dich attackiert hat?"
   storyNextchoices: "[1] Der alten Dame helfen\n[2] Die Frau ihrem Schicksal \xFCberlassen
     und deine Apfelsuche fortsetzen"
   nextStates:

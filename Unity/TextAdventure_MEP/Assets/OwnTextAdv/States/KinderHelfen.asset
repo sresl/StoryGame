@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: KinderHelfen
   m_EditorClassIdentifier: 
   storyText: "Super, du hast alle 5 \xC4pfel gesammelt!\nDeine zweite Aufgabe besteht
-    nun darin das du die richtigen Kinder vor dem verhungern retten musst. Entscheidest
-    du dich f\xFCr das falsche, verhungert das andere und deine Mission ist gescheitert.."
+    nun darin, dass du die richtigen Kinder vor dem verhungern retten musst. Entscheidest
+    du dich f\xFCr das Falsche, verhungert das andere und deine Mission ist gescheitert.."
   storyNextchoices: "[1] \xC4pfel an die Kinder verteilen\n[2] \xC4pfel selber essen
     und aufgeben.."
   nextStates:

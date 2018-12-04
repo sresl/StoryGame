@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyText: "Du beugst dich \xFCber die alte Dame um ihr aufzuhelfen.. Sie ist jedoch
     nicht K.O. und startet einen \xDCberraschungsangriff. Du liegst hilflos am Boden
-    und die Frau schl\xE4gt dich bewustloss. \r\nLeider stirbst du in der Wildniss..
+    und die Frau schl\xE4gt dich bewustlos. \r\nLeider stirbst du in der Wildnis..
     starte dein Abenteuer neu."
   storyNextchoices: '[1] Deine Mission erneut starten'
   nextStates:

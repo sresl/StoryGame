@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
   m_Name: ApfelSuchen
   m_EditorClassIdentifier: 
-  storyText: "Deine erste Aufgabe besteht nun darin \xC4pfel f\xFCr die Kinder zu
+  storyText: "Deine erste Aufgabe besteht nun darin, \xC4pfel f\xFCr die Kinder zu
     sammeln.\r\nDu kannst dich nun entscheiden ob du deine \xC4pfel selbst aussuchen
     m\xF6chstes, oder es dem Zufall \xFCberl\xE4sst.\t\t"
   storyNextchoices: " [1] Risiko, alle zuf\xE4llig ausw\xE4hlen lassen\n[2] Die \xC4pfel

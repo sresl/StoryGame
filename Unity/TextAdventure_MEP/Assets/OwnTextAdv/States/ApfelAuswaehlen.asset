@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
   m_Name: ApfelAuswaehlen
   m_EditorClassIdentifier: 
-  storyText: "Beginne nun mit der Auswahl deiner \xC4pfel, insgesammt musst du 5 \xC4pfel
-    sammeln, da du 5 Kinder vor dem verhungern bewahren musst.\r\nAber Achtung, erwischt
-    du einen schlechten, kann deine Mission nicht weiter fortgesetzt werden!"
+  storyText: "Beginne nun mit der Auswahl deiner \xC4pfel. Insgesammt musst du 5 \xC4pfel
+    sammeln, da du 5 Kinder vor dem Verhungern bewahren musst.\r\nAber Achtung! Erwischt
+    du einen Schlechten, kann deine Mission nicht weiter fortgesetzt werden!"
   storyNextchoices: "[1] Linker Apfel\n[2] Rechter Apfel\n\n[3] \xC4pfel auf anderem
     Baum sammeln"
   nextStates:
