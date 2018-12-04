@@ -33,10 +33,13 @@ Wählt man das richtige Kind, rettet man dieses erfolgreich vor dem verhungern, 
 Hat man alle 5 Kinder erfolgreich gerettet, hat man das Spiel geschafft. Man kann es nun nochmal neu spielen wenn man möchte, um auch andere Wege zu testen.
 
 
-# Prototyp
+## Prototyp
 
-
+#### Twine Prototyp
 ![Twine Prototyp](https://github.com/sresl/StoryGame/blob/master/Screenshots/PrototypTwine.png)
+
+### State Diagramm
+![State Diagramm auf Papier](https://github.com/sresl/StoryGame/blob/master/Screenshots/GrundideeStatesPapier.jpg)
 
 ### Link zu dem Statediagramm/Prototype
 http://twinery.org/2/#!/stories/7a90eb29-d313-4071-80a9-aeadbd9f60b0
