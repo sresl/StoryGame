@@ -2,15 +2,15 @@
 
 ### Words: Apple / Umbrella / Videotape
 
-## Marry Poppins!
+## Mary Poppins!
 
 
 #### Gruppen Mitglieder: 
 
-Tobias Wanghofer (Gruppenleiter/Programmierung)
-Matthias Hosp (Design)
-Florian Trube (Dokumentation)
-Sarah Resl (Design/Dokumentation)
+- Tobias Wanghofer (Gruppenleiter/Programmierung)
+- Matthias Hosp (Design)
+- Florian Trube (Dokumentation)
+- Sarah Resl (Design/Dokumentation)
 
 
 #### Beschreibung des Spiels:

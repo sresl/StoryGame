@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
   m_Name: KinderHelfen
   m_EditorClassIdentifier: 
-  storyText: "Deine zweite Aufgabe besteht nun darin das du die richtigen Kinder vor
-    dem verhungern retten musst. Entscheidest du dich f\xFCr das falsche, verhungert
+  storyText: "Deine zweite Aufgabe besteht nun darin das du die richtigen Kinder vor\r
+    dem verhungern retten musst. Entscheidest du dich f\xFCr das falsche, verhungert\r
     das andere und deine Mission ist gescheitert.."
   storyNextchoices: '[1] Linkes Kind
 

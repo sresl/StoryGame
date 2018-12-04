@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
+  m_Name: BaumSammeln
+  m_EditorClassIdentifier: 
+  storyText: "Du wanderst weiter, pl\xF6tzlich taucht eine alte Frau hinter dir auf
+    und versucht dich mit ihrem Gehstock zu schlagen, da du \xC4pfel von ihrem Baum
+    gepfl\xFCckt hast!\r\nM\xF6chtest du sie bek\xE4mpfen oder versuchen zu fliehen?"
+  storyNextchoices: "[1] Die alte Dame bek\xE4mpfen\n[2] Versuchen zu fliehen"
+  nextStates:
+  - {fileID: 11400000, guid: cabc0c5471d01174cb45ad884432048f, type: 2}
+  - {fileID: 11400000, guid: 220c07b7123428a48820c1b35881c26c, type: 2}
+  randomStates: []
