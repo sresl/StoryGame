@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
   m_Name: RandomKinderHelfen
   m_EditorClassIdentifier: 
-  storyText: 
+  storyText: RandomKinderHelfen
   storyNextchoices: 
   nextStates: []
   randomStates: []

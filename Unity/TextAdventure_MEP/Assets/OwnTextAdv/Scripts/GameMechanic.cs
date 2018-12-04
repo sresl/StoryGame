@@ -19,6 +19,8 @@ public class GameMechanic : MonoBehaviour
     private int passedStates;
     private bool wait, overrideTextComponent;
     private bool infoOn;
+    private bool SadChildLeft;
+    private bool HappyChildRight;
 
 
     //Loading scene
@@ -37,6 +39,10 @@ public class GameMechanic : MonoBehaviour
     public Image appleStateBG;
     public Text appleStateTxt;
     public Text hungerStateTxt;
+    public Sprite SadChildRightIMG;
+    public Image SadChildLeftIMG;
+    public Image HappyChildRightIMG;
+    public Image HappyChildLeftIMG;
     
     private string overrideText;
 
@@ -82,6 +88,9 @@ public class GameMechanic : MonoBehaviour
         Debug.Log("Enter");
 
         SetupIntroUI();
+
+        bool SadChildLeft = boolGen.NextBoolean();
+        Debug.Log("SadChildLeft is "+SadChildLeft);
     }
 
     private bool containsBadApple(bool[] appleBasket)
@@ -121,6 +130,20 @@ public class GameMechanic : MonoBehaviour
     {
         ManageState();
 
+        if(SadChildLeft == true)
+        {
+            HappyChildRight = true;
+        }
+
+        if (SadChildLeft == false)
+        {
+            HappyChildRight = false;
+        }
+
+
+
+
+
     }
 
     private void ResetValues()
@@ -132,7 +155,7 @@ public class GameMechanic : MonoBehaviour
     private State doTransition(State currentState, State nextState)
     {
 
-        passedStates += 1;
+        passedStates += 1;  
 
 
 
