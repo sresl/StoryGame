@@ -14,6 +14,10 @@ MonoBehaviour:
   storyText: "Deine zweite Aufgabe besteht nun darin das du die richtigen Kinder vor
     dem verhungern retten musst. Entscheidest du dich f\xFCr das falsche, verhungert
     das andere und deine Mission ist gescheitert.."
-  storyNextchoices: 
-  nextStates: []
+  storyNextchoices: '[1] Linkes Kind
+
+    [2] Rechtes Kind'
+  nextStates:
+  - {fileID: 11400000, guid: 9415a9570200ae345b9ad1051714bf70, type: 2}
+  - {fileID: 11400000, guid: c9db39326c9b0034b94ef58e5ad4db19, type: 2}
   randomStates: []
