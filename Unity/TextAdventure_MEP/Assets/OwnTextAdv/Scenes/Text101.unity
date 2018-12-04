@@ -1044,6 +1044,7 @@ GameObject:
   - component: {fileID: 1789690637}
   - component: {fileID: 1789690638}
   - component: {fileID: 1789690636}
+  - component: {fileID: 1789690639}
   m_Layer: 0
   m_Name: GameLogic
   m_TagString: Untagged
@@ -1057,7 +1058,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1789690635}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 916c2b8ce06b97b458beb4f24cc7e1fb, type: 3}
   m_Name: 
@@ -1110,6 +1111,29 @@ MonoBehaviour:
   woolStateTxt: {fileID: 273611987}
   humanStateTxt: {fileID: 1343545082}
   loadSceneObject: {fileID: 1922330582}
+--- !u!114 &1789690639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1789690635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 417023ca75d4da84da15ed10c1648f77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingState: {fileID: 11400000, guid: ee8762e751eb13a4fa8578129ae1f18f, type: 2}
+  loadSceneObject: {fileID: 1922330582}
+  textIntroComponent: {fileID: 144998599}
+  textStoryComponent: {fileID: 522065320}
+  textComponentChoices: {fileID: 667155111}
+  introBG: {fileID: 1436110838}
+  storyBG: {fileID: 2056176617}
+  storyMenueBG: {fileID: 1932450952}
+  hungerStateBG: {fileID: 1458890660}
+  appleStateBG: {fileID: 1632206100}
+  appleStateTxt: {fileID: 273611987}
+  hungerStateTxt: {fileID: 1343545082}
 --- !u!1 &1922330582
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class State : ScriptableObject{
     [TextArea(5, 14)] [SerializeField] string storyNextchoices;
     public State[] nextStates;
     public State[] randomStates;
+    private readonly double probability = 0.3;
 
     public string GetStateStory()
     {
@@ -23,6 +24,10 @@ public class State : ScriptableObject{
         return storyNextchoices;
     }
 
+    //Fügt die Arrays nextStates und RandomStates zusammen:
+    //Es wird die Auswahl (Random) aus RandomStates genommen und an den 
+    //Anfang (d.h. Stelle 0) von Next States gestellt. 
+    //Dieses neu zusammengestellte Array wird dann returned. 
     public State[] GetNextStates()
     {
         if (randomStates.Length == 0)
@@ -32,7 +37,7 @@ public class State : ScriptableObject{
 
         State[] extendedArray = new State[nextStates.Length + 1];
 
-        int rnd = PickBiasedRandomState(0, 0, randomStates.Length, 0.7);
+        int rnd = PickBiasedRandomState(0, 0, randomStates.Length, probability);
         extendedArray[0] = randomStates[rnd];
         for (int i = 0; i < nextStates.Length; i++)
         {
@@ -42,16 +47,18 @@ public class State : ScriptableObject{
         return extendedArray;
     }
 
+    //Wählt den prefered index (State) aus den Random States aus.
     int PickBiasedRandomState(int idxPrefered, int randomMin, int randomMax, double probabilityPrefered)
     {
         //return getrandom.NextDouble() < 0.8 ? idxPrefered : getrandom.Next(idxMin, idxMax);
      
         if (RandomState.getrandom.NextDouble() < probabilityPrefered)
         {
-            Debug.Log("< " + probabilityPrefered);
+            Debug.Log("Current Probability < " + probabilityPrefered);
             return idxPrefered;
         }
-        Debug.Log("> " + probabilityPrefered);
+        Debug.Log("Current Probabilty > " + probabilityPrefered);
+        Debug.Log(randomMin +", "+ randomMax);
         return RandomState.getrandom.Next(randomMin, randomMax);
     }
 
