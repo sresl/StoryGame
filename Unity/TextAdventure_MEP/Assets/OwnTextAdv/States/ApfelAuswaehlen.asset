@@ -14,8 +14,11 @@ MonoBehaviour:
   storyText: "Beginne nun mit der Auswahl deiner \xC4pfel, insgesammt musst du 5 \xC4pfel
     sammeln, da du 5 Kinder vor dem verhungern bewahren musst.\r\nAber Achtung, erwischt
     du einen schlechten, kann deine Mission nicht weiter fortgesetzt werden!"
-  storyNextchoices: ' [1] Linker Apfel
-
-    [2] Rechter Apfel'
-  nextStates: []
+  storyNextchoices: "[1] Linker Apfel\n[2] Rechter Apfel\n\n[3] \xC4pfel auf anderem
+    Baum sammeln"
+  nextStates:
+  - {fileID: 11400000, guid: ab238da8ba2843d489ce2fe37c6511cd, type: 2}
+  - {fileID: 11400000, guid: 83b99845f1733684ea8c9db4a9b5c236, type: 2}
+  - {fileID: 11400000, guid: c2c3813e4f0d03848b69416c09189478, type: 2}
+  - {fileID: 11400000, guid: 92f09d85021986645a6932e2d75bd2d9, type: 2}
   randomStates: []

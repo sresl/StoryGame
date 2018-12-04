@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: StartState
   m_EditorClassIdentifier: 
   storyText: "In diesem Game fliegst du als Marry Poppins durch die Welt und musst
-    Kinder retten. Um dies zu schaffen musst du zu erst ein paar \xC4pfel sammeln,
-    um die besagten Kinder vor dem verhungern zu retten!"
+    5 Kinder retten. Um dies zu schaffen musst du zu erst ein paar \xC4pfel sammeln.\n\nPS:
+    Es haben jedoch nur genau 5 \xC4pfel in deiner Tasche Platz."
   storyNextchoices: ' [1] Apfel suchen
 
     [2] Beenden'

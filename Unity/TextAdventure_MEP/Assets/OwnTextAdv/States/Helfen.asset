@@ -9,11 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
-  m_Name: RandomApfelSchlecht
+  m_Name: Helfen
   m_EditorClassIdentifier: 
-  storyText: Du hast leider einen schlechten Apfel erwischt.. deine Mission ist hier
-    zu Ende, starte sie jetzt neu und versuche es nochmal.
-  storyNextchoices: '[1] Erneut versuchen'
+  storyText: "Du beugst dich \xFCber die alte Dame um ihr aufzuhelfen.. Sie ist jedoch
+    nicht K.O. und startet einen \xDCberraschungsangriff. Du liegst hilflos am Boden
+    und die Frau schl\xE4gt dich bewustloss. \r\nLeider stirbst du in der Wildniss..
+    starte dein Abenteuer neu."
+  storyNextchoices: '[1] Deine Mission erneut starten'
   nextStates:
   - {fileID: 11400000, guid: ee8762e751eb13a4fa8578129ae1f18f, type: 2}
   randomStates: []

@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
-  m_Name: RandomApfelGut
+  m_Name: RechtesKind
   m_EditorClassIdentifier: 
-  storyText: "Das Gl\xFCck war auf deiner Seite! Jetzt hast du genug \xC4pfel um den
-    Kindern zu helfen.\nBeginne nun deine zweite Mission!"
-  storyNextchoices: '[1] Den Kindern helfen'
+  storyText: 
+  storyNextchoices: 
   nextStates:
-  - {fileID: 11400000, guid: 92f09d85021986645a6932e2d75bd2d9, type: 2}
+  - {fileID: 11400000, guid: 035ca1ebdb10dd24c8ece0904a84fcbe, type: 2}
+  - {fileID: 11400000, guid: 17bb1b896ad1a5e4a8793ccb3e2981b2, type: 2}
   randomStates: []

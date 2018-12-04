@@ -9,9 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
-  m_Name: GuterApfel
+  m_Name: EndeVerteilen
   m_EditorClassIdentifier: 
-  storyText: 
-  storyNextchoices: 
-  nextStates: []
+  storyText: 'Du hast leider dem falschen Kind einen Apfel gegeben.. das andere ist
+    leider verhungert..
+
+'
+  storyNextchoices: '[1] Starte einen neuen Versuch'
+  nextStates:
+  - {fileID: 11400000, guid: ee8762e751eb13a4fa8578129ae1f18f, type: 2}
   randomStates: []

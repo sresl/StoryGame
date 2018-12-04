@@ -14,8 +14,8 @@ MonoBehaviour:
   storyText: "Deine erste Aufgabe besteht nun darin \xC4pfel f\xFCr die Kinder zu
     sammeln.\r\nDu kannst dich nun entscheiden ob du deine \xC4pfel selbst aussuchen
     m\xF6chstes, oder es dem Zufall \xFCberl\xE4sst.\t\t"
-  storyNextchoices: " [1] Risiko, alle auf einmal zuf\xE4llig ausw\xE4hlen\n[2] \xC4pfel
-    selber einzeln ausw\xE4hlen\n"
+  storyNextchoices: " [1] Risiko, alle zuf\xE4llig ausw\xE4hlen lassen\n[2] Die \xC4pfel
+    selber suchen\n"
   nextStates:
   - {fileID: 11400000, guid: 56a5f09ad97df7b4babe8f66522b09e9, type: 2}
   randomStates:

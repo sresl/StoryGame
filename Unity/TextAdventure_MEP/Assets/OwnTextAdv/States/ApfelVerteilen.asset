@@ -13,8 +13,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyText: "Verteile deine \xC4pfel nun an die richtigen Kinder. Gibst du den Apfel
     einem falschen Kind, wird das andere verhungern.. W\xE4hle weise!"
-  storyNextchoices: '[0] Linkes Kind
+  storyNextchoices: '[1] Linkes Kind
 
-    [1] Rechtes Kind'
-  nextStates: []
+    [2] Rechtes Kind'
+  nextStates:
+  - {fileID: 11400000, guid: b3e61dae6ed235c49a85725bcc7a5c4f, type: 2}
+  - {fileID: 11400000, guid: 0149b1a6160045340add837d30865562, type: 2}
+  - {fileID: 11400000, guid: 0149b1a6160045340add837d30865562, type: 2}
   randomStates: []
