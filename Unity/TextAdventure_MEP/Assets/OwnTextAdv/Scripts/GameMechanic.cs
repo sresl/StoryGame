@@ -19,7 +19,7 @@ public class GameMechanic : MonoBehaviour
     private int passedStates;
     private bool wait, overrideTextComponent;
     private bool infoOn;
-    private bool SadChildLeft;
+    private bool SadChildLeft = true;
     private bool HappyChildRight;
 
 
@@ -39,7 +39,7 @@ public class GameMechanic : MonoBehaviour
     public Image appleStateBG;
     public Text appleStateTxt;
     public Text hungerStateTxt;
-    public Sprite SadChildRightIMG;
+    public Image SadChildRightIMG;
     public Image SadChildLeftIMG;
     public Image HappyChildRightIMG;
     public Image HappyChildLeftIMG;
@@ -59,6 +59,12 @@ public class GameMechanic : MonoBehaviour
         storyBG.enabled = textStoryComponent.enabled = false;
         hungerStateBG.enabled = hungerStateTxt.enabled = false;
         appleStateBG.enabled = appleStateTxt.enabled = false;
+
+        SadChildRightIMG.gameObject.SetActive(false);
+        HappyChildLeftIMG.gameObject.SetActive(false);
+        SadChildLeftIMG.gameObject.SetActive(false);
+        HappyChildRightIMG.gameObject.SetActive(false);
+
         infoOn = false;
     }
 
@@ -89,8 +95,19 @@ public class GameMechanic : MonoBehaviour
 
         SetupIntroUI();
 
-        bool SadChildLeft = boolGen.NextBoolean();
+        //bool SadChildLeft = boolGen.NextBoolean();
+        SadChildLeft = true;
         Debug.Log("SadChildLeft is "+SadChildLeft);
+
+        if (SadChildLeft == true)
+        {
+            HappyChildRight = true;
+        }
+
+        if (SadChildLeft == false)
+        {
+            HappyChildRight = false;
+        }
     }
 
     private bool containsBadApple(bool[] appleBasket)
@@ -130,15 +147,9 @@ public class GameMechanic : MonoBehaviour
     {
         ManageState();
 
-        if(SadChildLeft == true)
-        {
-            HappyChildRight = true;
-        }
+        
 
-        if (SadChildLeft == false)
-        {
-            HappyChildRight = false;
-        }
+       
 
 
 
@@ -168,6 +179,52 @@ public class GameMechanic : MonoBehaviour
         if (currentState.name == "ApfelSuchen" && nextState.name == "RandomApfelSchlecht")
         {
             Debug.Log("War in ApfelSuchen und habe schlechte Äpfel");
+
+        }
+
+        
+        if (SadChildLeft == true && nextState.name == "KinderHelfen")
+        {
+            Debug.Log("2SadChildLeft is " + SadChildLeft);
+            SadChildRightIMG.gameObject.SetActive(false);
+            HappyChildLeftIMG.gameObject.SetActive(false);
+            SadChildLeftIMG.gameObject.SetActive(true);
+            HappyChildRightIMG.gameObject.SetActive(true);
+            introBG.enabled = textIntroComponent.enabled = false;
+        }
+
+        if (SadChildLeft == false && nextState.name == "KinderHelfen")
+        {
+            SadChildRightIMG.gameObject.SetActive(true);
+            HappyChildLeftIMG.gameObject.SetActive(true);
+            SadChildLeftIMG.gameObject.SetActive(false);
+            HappyChildRightIMG.gameObject.SetActive(false);
+            introBG.enabled = textIntroComponent.enabled = false;
+        }
+
+        if (SadChildLeft == true && nextState.name == "RightChild")
+        {
+            introBG.enabled = textIntroComponent.enabled = true;
+            overrideTextComponent = true;
+            overrideText = "Wrong Child";
+            SadChildRightIMG.gameObject.SetActive(false);
+            HappyChildLeftIMG.gameObject.SetActive(false);
+            SadChildLeftIMG.gameObject.SetActive(false);
+            HappyChildRightIMG.gameObject.SetActive(false);
+            
+        }
+
+        if (SadChildLeft == true && nextState.name == "LeftChild")
+        {
+            Debug.Log("SetChildLeft: true");
+            introBG.enabled = textIntroComponent.enabled = true;
+            overrideTextComponent = true;
+            overrideText = "Right Child";
+            SadChildRightIMG.gameObject.SetActive(false);
+            HappyChildLeftIMG.gameObject.SetActive(false);
+            SadChildLeftIMG.gameObject.SetActive(false);
+            HappyChildRightIMG.gameObject.SetActive(false);
+
 
         }
 

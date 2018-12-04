@@ -11,12 +11,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566f07b95ff427b48a24409368f999b0, type: 3}
   m_Name: KinderHelfen
   m_EditorClassIdentifier: 
-  storyText: "Super, du hast alle 5 \xC4pfel gesammelt!\nDeine zweite Aufgabe besteht
-    nun darin, dass du die richtigen Kinder vor dem verhungern retten musst. Entscheidest
-    du dich f\xFCr das Falsche, verhungert das andere und deine Mission ist gescheitert.."
-  storyNextchoices: "[1] \xC4pfel an die Kinder verteilen\n[2] \xC4pfel selber essen
-    und aufgeben.."
+=======
+  storyText: "Deine zweite Aufgabe besteht nun darin das du die richtigen Kinder vor\r
+    dem verhungern retten musst. Entscheidest du dich f\xFCr das falsche, verhungert\r
+    das andere und deine Mission ist gescheitert.."
+  storyNextchoices: '[1] Linkes Kind
+
+    [2] Rechtes Kind'
+>>>>>>> 33240f256c6e88f32550ac414cbb16f4514a1a9e
   nextStates:
-  - {fileID: 11400000, guid: 035ca1ebdb10dd24c8ece0904a84fcbe, type: 2}
-  - {fileID: 11400000, guid: 248865f26d5800c44a2f8b0af3d74f6c, type: 2}
+  - {fileID: 11400000, guid: 9415a9570200ae345b9ad1051714bf70, type: 2}
+  - {fileID: 11400000, guid: c9db39326c9b0034b94ef58e5ad4db19, type: 2}
   randomStates: []

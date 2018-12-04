@@ -192,7 +192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &67461019
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -700,7 +700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1076490221
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1001,7 +1001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1351491707
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1482,10 +1482,10 @@ MonoBehaviour:
   appleStateBG: {fileID: 1632206100}
   appleStateTxt: {fileID: 273611987}
   hungerStateTxt: {fileID: 1343545082}
-  SadChildRightIMG: {fileID: 0}
-  SadChildLeftIMG: {fileID: 0}
-  HappyChildRightIMG: {fileID: 0}
-  HappyChildLeftIMG: {fileID: 0}
+  SadChildRightIMG: {fileID: 67461020}
+  SadChildLeftIMG: {fileID: 1351491708}
+  HappyChildRightIMG: {fileID: 1076490222}
+  HappyChildLeftIMG: {fileID: 1891545321}
 --- !u!1 &1891545319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1503,7 +1503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1891545320
 SpriteRenderer:
   m_ObjectHideFlags: 0
