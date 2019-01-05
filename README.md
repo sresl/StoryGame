@@ -28,3 +28,25 @@ Hat man 5 gute Äpfel eingesammelt, muss man entscheiden, wekchen 5 Kindern man 
 
 ### Link zu dem Statediagramm/Prototype
 http://twinery.org/2/#!/stories/7a90eb29-d313-4071-80a9-aeadbd9f60b0
+
+
+
+### Status Projekt:
+WIP
+
+#### Konzept & Dokumentation:
+Finished
+#### Implementation:
+WIP
+#### Testing:
+Planned
+#### Refactoring: 
+Planned
+
+
+### Dev platform: 
+Unity Version 2018.2.9f1 , Visual Studio Version 7.6.4 (build 22), entwicklet auf WIN und MAC,
+### Target platform:
+WebGL 1920x1080
+### Verwendung Sourcen:
+Grafiken dürfen privat und komerziell benutzt werden.
