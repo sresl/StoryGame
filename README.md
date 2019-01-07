@@ -29,7 +29,14 @@ Hat man 5 gute Äpfel eingesammelt, muss man entscheiden, wekchen 5 Kindern man 
 ### Link zu dem Statediagramm/Prototype
 http://twinery.org/2/#!/stories/7a90eb29-d313-4071-80a9-aeadbd9f60b0
 
+### Game Screens
+![Start Page](https://github.com/sresl/StoryGame/blob/master/Screenshots/gameplay.png)
 
+![Suche Äpfel](https://github.com/sresl/StoryGame/blob/master/Screenshots/gameplay1.png)
+
+![Wähle richtigen Apfel aus](https://github.com/sresl/StoryGame/blob/master/Screenshots/gameplay2.png)
+
+![Zufällige Äpfel](https://github.com/sresl/StoryGame/blob/master/Screenshots/gameplay3.png)
 
 ### Status Projekt:
 WIP
